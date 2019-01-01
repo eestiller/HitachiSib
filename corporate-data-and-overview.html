@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Corporate Data and Overview</title>
+    <link rel="stylesheet" href="static/css/page-loadscreen.css" />
+    <link rel="stylesheet" href="static/css/foundation.css" />
+    <link rel="stylesheet" href="static/css/slick.css" />
+    <link rel="stylesheet" href="static/css/slick-theme.css" />
+    <link rel="stylesheet" href="static/css/swiper.min.css" />
+    <link rel="stylesheet" href="static/css/app.css" />
+    <link rel="stylesheet" href="static/css/responsive.css" />
+    <link href="static/css/fontello.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link href="static/css/font-awesome.css" media="screen" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="static/css/linea-styles.css" />
+    <link rel="stylesheet" href="static/css/linea-arrows-styles.css" />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/media-query.css" />
+    
+    
+    <script>
+      window.onload = function() {
+        var inView = false;
+
+        function isScrolledIntoView(elem) {
+          var docViewTop = $(window).scrollTop();
+          var docViewBottom = docViewTop + $(window).height();
+
+          var elemTop = $(elem).offset().top;
+          var elemBottom = elemTop + $(elem).height();
+
+          return elemTop <= docViewBottom && elemBottom >= docViewTop;
+        }
+        // Show tooltips always even the stats are zero
+        $(window).scroll(function() {
+          if (isScrolledIntoView("#regions")) {
+            if (inView2) {
+              return;
+            }
+            inView2 = true;
+            CanvasJS.addColorSet("regions_colorset", [
+              //colorSet Array
+
+              "#cf052d",
+              "#fe371a",
+              "#ffae1c",
+              "#008771",
+              "#78b752",
+              "#5689b4"
+            ]);
+            var chart2 = new CanvasJS.Chart("regions", {
+              colorSet: "regions_colorset",
+              animationEnabled: true,
+              title: {
+                horizontalAlign: "left"
+              },
+              options: {
+                maintainAspectRatio: true
+              },
+              data: [
+                {
+                  type: "doughnut",
+                  startAngle: -90,
+                  innerRadius: '40%',
+                  radius: '75%',
+                  indexLabelFontSize: 11,
+                  // indexLabel: "{label} - #percent%",
+                  indexLabel: "{label}",
+                  toolTipContent: "<b>{label}:</b> {y}%",
+                  dataPoints: [
+                    { y: 50, label: "Japan" },
+                    { y: 22, label: "Rest of Asia" },
+                    { y: 13, label: "North America" },
+                    { y: 10, label: "China" },
+                    { y: 10, label: "Europe" },
+                    { y: 5, label: "Others" }
+                  ]
+                }
+              ]
+            });
+            chart2.render();
+          }
+
+          if (isScrolledIntoView("#industry_segments")) {
+            if (inView) {
+              return;
+            }
+            inView = true;
+            CanvasJS.addColorSet("industry_segments_colorset", [
+              //colorSet Array
+
+              "#fd351b",
+              "#d0052d",
+              "#008872",
+              "#7ab853",
+              "#83c5bb",
+              "#7ab853",
+              "#005bc4",
+              "#8687bd"
+            ]);
+            var chart = new CanvasJS.Chart("industry_segments", {
+              colorSet: "industry_segments_colorset",
+              animationEnabled: true,
+              title: {
+                horizontalAlign: "left"
+              },
+              options: {
+                maintainAspectRatio: true
+              },
+              data: [
+                {
+                  type: "doughnut",
+                  startAngle: -90,
+                  innerRadius: '40%',
+                  radius: '75%',
+                  indexLabelFontSize: 11,
+                  // indexLabel: "{label} - #percent%",
+                  indexLabel: "{label}",
+                  toolTipContent: "<b>{label}:</b> {y}%",
+                  dataPoints: [
+                    {
+                      y: 23,
+                      label: "Social Infrastracture & Industrial System"
+                    },
+                    { y: 20, label: "Information & Telecommunication System" },
+                    { y: 16, label: "High Functional Materials & Components" },
+                    { y: 11, label: "Electronic Systems & Equipments" },
+                    { y: 10, label: "Automotive Systems" },
+                    { y: 9, label: "Construction Machinery" },
+                    { y: 6, label: "Others (Logistics & Other Services)" },
+                    { y: 5, label: "Smart Life & Ecofriendly Systems" }
+                  ]
+                }
+              ]
+            });
+            chart.render();
+          }
+        });
+        var inView2 = false;
+
+        function isScrolledIntoView(elem2) {
+          var docViewTop2 = $(window).scrollTop();
+          var docViewBottom2 = docViewTop2 + $(window).height();
+
+          var elemTop2 = $(elem2).offset().top;
+          var elemBottom2 = elemTop2 + $(elem2).height();
+
+          return elemTop2 <= docViewBottom2 && elemBottom2 >= docViewTop2;
+        }
+        // Show tooltips always even the stats are zero
+        $(window).scroll(function() {});
+      };
+    </script>
+  </head>
+
+  <body id="cdoa">
+    <div class="load-screen front-index">
+      <div class="load-screen__one-part-wrapper">
+        <div class="load-screen__one-part"></div>
+      </div>
+      <div class="load-screen__second-part-wrapper">
+        <div class="load-screen__second-part"></div>
+      </div>
+    </div>
+    <header>
+      <div id="logo">
+        <a href="home.html"
+          ><h1><img src="images/logo.png" alt="" /></h1
+        ></a>
+      </div>
+    </header>
+    <div class="section-back">
+      <div class="columns large-6 menu-container">
+        <div id="menu-wrapper">
+          <div id="menu-controller">
+            <div id="menu-icon">
+              <div id="menu-icon-stack">
+                <span></span> <span></span> <span></span>
+              </div>
+              <div id="menu-icon-close"><span></span> <span></span></div>
+            </div>
+            <div id="menu-caption">
+              <span id="menu-caption-open"> menu </span>
+              <span id="menu-caption-close"> close </span>
+            </div>
+          </div>
+          <div id="menu-content">
+            <nav id="main-menu">
+              <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="overview.html">Overview</a></li>
+                <li>
+                  <a href="hitachi-social-innovation.html">Social Innovation</a>
+                </li>
+                <li>
+                  <a href="message-from-chairman.html">Message from Chairman</a>
+                </li>
+                <li>
+                  <a href="corporate-data-and-overview.html" class="active"
+                    >Corporate Data Overview</a
+                  >
+                </li>
+                <li>
+                  <a href="operations-in-asean.html">Operations in ASEAN</a>
+                </li>
+                <li>
+                  <a href="business-portfolio.html"
+                    >Business Portfolio in Asia</a
+                  >
+                  <ul>
+                    <li>
+                      <a
+                        href="business-portfolio/information-and-telecommunication-systems.html"
+                        >Information and Telecommunication Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a href="business-portfolio/power-systems.html"
+                        >Power Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="business-portfolio/social-infrastructure-and-industrial-systems.html"
+                        >Social Infrastructure and Industrial Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="business-portfolio/electronic-systems-and-equipment.html"
+                        >Electronic Systems and Equipment</a
+                      >
+                    </li>
+                    <li>
+                      <a href="business-portfolio/construction-machinery.html"
+                        >Construction Machinery</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="business-portfolio/high-functional-materials-and-components.html"
+                        >High Functional Materials and Components</a
+                      >
+                    </li>
+                    <li>
+                      <a href="business-portfolio/automotive-systems.html"
+                        >Automotive Systems</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="business-portfolio/smart-life-and-ecofriendly-systems.html"
+                        >Smart Life and Ecofriendly Systems</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="csr-activities.html">CSR Activities</a>
+                  <ul>
+                    <li>
+                      <a href="csr-activities/orchard.html"
+                        >Christmas Light-Up</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="csr-activities/hitachi-young-leaders-initiative.html"
+                        >Hitachi Young Leaders Initiative</a
+                      >
+                    </li>
+                    <li>
+                      <a href="csr-activities/hitachi-myanmar-lab.html"
+                        >Other Activities</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="hitachi-group-identity.html"
+                    >Hitachi Group Identity</a
+                  >
+                </li>
+                <li>
+                  <div id="socials-mobile" class="show-for-small-only">
+                    <ul>
+                      <li>
+                        <a
+                          href="https://www.facebook.com/HitachiAsia/"
+                          target="_blank"
+                          ><i class="fa fa-facebook"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://sg.linkedin.com/company/hitachi-asia-ltd-"
+                          target="_blank"
+                          ><i class="fa fa-linkedin"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://twitter.com/HitachiGlobal"
+                          target="_blank"
+                          ><i class="fa fa-twitter"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.youtube.com/user/HitachiBrandChannel"
+                          target="_blank"
+                          ><i class="fa fa-youtube"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div id="socials" class="hide-for-small-only">
+              <ul>
+                <li>
+                  <a
+                    href="https://www.facebook.com/HitachiAsia/"
+                    target="_blank"
+                    ><i class="fa fa-facebook"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://sg.linkedin.com/company/hitachi-asia-ltd-"
+                    target="_blank"
+                    ><i class="fa fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/HitachiGlobal" target="_blank"
+                    ><i class="fa fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/user/HitachiBrandChannel"
+                    target="_blank"
+                    ><i class="fa fa-youtube"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="bg-primary" class="hide-for-small-only">
+            <p class="image-title">
+              SERVING THE WORLD WITH OUR SOCIAL INNOVATION BUSINESS
+            </p>
+          </div>
+          <div id="bg-secondary"></div>
+        </div>
+      </div>
+      <div class="columns large-6">
+        <a href="home.html"
+          ><img src="images/cross-out.png" alt="" class="back"
+        /></a>
+      </div>
+    </div>
+    <div class="post-header">
+      <div class="media-wrapper">
+        <img src="images/cdoa-banner.jpg" class="post-header-image" alt="" />
+      </div>
+      <div class="waveWrapper waveAnimation">
+        <div class="waveWrapperInner bgTop">
+          <div
+            class="wave waveTop"
+            style="background-image: url('images/wave-top.png')"
+          ></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div
+            class="wave waveMiddle"
+            style="background-image: url('images/wave-mid.png')"
+          ></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div
+            class="wave waveBottom"
+            style="background-image: url('images/wave-bot.png')"
+          ></div>
+        </div>
+      </div>
+      <div class="post-header-content">
+        <div class="large-12 columns title-container">
+          <h2>Corporate Data<br />and Overview</h2>
+        </div>
+      </div>
+      <!--
+        <p class="scroll-down-arrow">
+          <span class="scroll-down">
+            <i class="icon-arrows-slim-down"></i>
+          </span>
+        </p>
+      -->
+    </div>
+    <div class="post-content">
+      <div class="row animated bounceInLeft delay-3s">
+        <div class="large-6 medium-6 columns">
+          <img src="images/cdoa-building.jpg" alt="building" />
+        </div>
+        <div class="large-6 medium-6 columns">
+          <div class="business-details">
+            <table>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>Corporate Name</p>
+                    <p><b>Hitachi, Ltd.</b></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Founded</p>
+                    <p><b>1910</b></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>President &amp; CEO</p>
+                    <p><b>Toshiaki Higashihara</b></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Numbers of group companies</p>
+                    <p><b>879</b> (Japan: 202, Overseas: 677)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>Number of employees</p>
+                    <p><b>307,275</b> (As of 31st March, 2018)</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      Based on International Financial Reporting Standards for
+                      the fiscal year ended March 31, 2018
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="row revenue">
+        <div class="large-6 columns">
+          <div class="chart-wrapper">
+            <div
+              id="industry_segments"
+              style="height: 370px; width: 100%;"
+            ></div>
+          </div>
+          <!--
+            <div class="show-for-small-only">
+              <img src="images/industry-segments-graph.PNG" alt="">
+            </div>
+          -->
+        </div>
+        <div class="large-6 columns">
+          <p><b>REVENUE BY INDUSTRY SEGMENTS</b></p>
+          <p>Total : 9,368.6 Billion JPY</p>
+          <img
+            src="images/label-industry-segments.jpg"
+            class="graph-label1"
+            alt="label"
+          />
+        </div>
+      </div>
+      <div class="row revenue">
+        <div class="large-6 columns">
+          <div class="chart-wrapper">
+            <div id="regions" style="height: 320px; width: 100%;"></div>
+          </div>
+          <!--
+            <div class="show-for-small-only">
+              <img src="images/regions-graph.PNG" alt="">
+            </div>
+          -->
+        </div>
+        <div class="large-6 columns">
+          <p><b>REVENUE BY REGION</b></p>
+          <p>
+            Based on International Financial Reporting Standards for the fiscal
+            year ended March 31, 2018
+          </p>
+          <img
+            src="images/label-regions.jpg"
+            class="graph-label2"
+            alt="label"
+          />
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="row">
+        <div class="columns large-6 small-12">
+          <ul class="links">
+            <li>
+              <a href="http://www.hitachi.com.sg/utility/terms/index.html"
+                >Terms of Use</a
+              >
+            </li>
+            <li>
+              <a href="http://www.hitachi.com.sg/utility/privacy/index.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="columns large-6 small-12">
+          <p class="footer-copyright">
+            © Hitachi, Ltd. 1994, 2017. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.min.js"></script>
+    <script src="js/jquery.inview.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.js"></script>
+    <!-- <script src="bower_components/jquery/dist/jquery.js"></script> -->
+    <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
+    <script src="bower_components/countto/jquery.countTo.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/slick.min.js" type="text/javascript"></script>
+    <script src="js/app.js"></script>
+    <!-- Initialize Swiper -->
+    <script src="js/parallax.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        setTimeout(function() {
+          $("img.post-header-image").addClass("banner-zoom");
+        }, 3000);
+        setTimeout(function() {
+          $(".load-screen").removeClass("front-index");
+          $(".load-screen").fadeOut(1000);
+        }, 3000);
+        $("#menu-controller").click(function() {
+          $("body").toggleClass("hide-overflow");
+        });
+
+
+        $(window).on("resize", function(e) {
+          checkScreenSize();
+        });
+        checkScreenSize();
+        function checkScreenSize() {
+          var newWindowWidth = $(window).width();
+          if (newWindowWidth <= 375) {
+            $("#menu-controller").click(function() {
+              $(".columns .business-details").toggleClass(
+                "hide open-menu-toggle-mb footer-toggle-mb"
+              );
+              $(".revenue").toggleClass(
+                "hide open-menu-toggle-mb footer-toggle-mb"
+              );
+              $("footer").toggleClass("footer-toggle-mb");
+              $("#menu-wrapper.open-menu nav#main-menu").toggleClass(
+                "open-menu-toggle-mb"
+              );
+              $("p").removeClass("animated");
+              $("#cdoa div#menu-wrapper").toggleClass("bg-black");
+            });
+          } else if (newWindowWidth <= 414) {
+            $("#menu-controller").click(function() {
+              $(".columns .business-details").toggleClass(
+                "hide open-menu-toggle-mb footer-toggle-mb2"
+              );
+              $(".revenue").toggleClass(
+                "hide open-menu-toggle-mb footer-toggle-mb2"
+              );
+              $("footer").toggleClass("footer-toggle-mb2");
+              $("#menu-wrapper.open-menu nav#main-menu").toggleClass(
+                "open-menu-toggle-mb"
+              );
+              $("p").removeClass("animated");
+              $("#cdoa div#menu-wrapper").toggleClass("bg-black");
+            });
+          }
+        }
+      });
+    </script>
+    <script src="js/canvasjs.min.js"></script>
+  </body>
+</html>

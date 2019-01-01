@@ -1,0 +1,106 @@
+  /*	Modal Reveal
+	========================================================================== */
+  
+  .reveal-modal {
+    padding: 0 250px;
+    top: 40%;
+    position: fixed;
+  }
+  .reveal-modal .content {
+    padding-top: 0;
+}
+  .reveal-modal>.header {
+    margin: 0;
+    padding: 45px 0 0 0 !important;
+    box-shadow: none;
+    color: #FFFFFF;
+  }
+  .reveal-modal>.header h3{
+    color: #FFFFFF;
+    border-left: 3px solid #e30c2f;
+    padding-left: 10px;
+  }
+  .reveal-modal>.actions {
+    padding: 15px 15px 60px 15px !important;
+  }
+  .actions a {
+    color: #FFFFFF;
+    background: #e30c2f;
+    padding: 5px 20px;
+    border-radius: 27px;
+}
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal>.header {
+      padding: 1rem 1.25rem;
+    }
+  }
+  
+  .reveal-modal>.header h3 {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  
+  .reveal-modal .close-reveal-modal {
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  .reveal-modal>.content {
+    padding: .75rem 1rem;
+  }
+  
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal>.content {
+      padding: 1rem 1.25rem;
+    }
+  }
+  
+  .reveal-modal .actions {
+    padding: 1rem;
+  }
+  
+  .reveal-modal .actions a,
+  .reveal-modal .actions .button {
+    font-size: 0.875rem;
+  }
+  
+  .reveal-modal>.actions {
+    padding: .75rem 1rem 0;
+  }
+  
+  @media only screen and (min-width: 40.063em) {
+    .reveal-modal>.actions {
+      padding: 1rem 1.25rem 0;
+    }
+  }
+  
+  .reveal-modal .actions>.button {
+    margin-right: .75em;
+  }
+  
+  .reveal-modal-bg {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.80);
+    position: fixed;
+  }
+  /* Dialogs */
+  
+  .reveal-modal.dialog>.actions {
+    text-align: right;
+  }
+  
+  .reveal-modal.dialog .actions>.button {
+    margin-right: 0;
+    margin-left: .75em;
+  }
+  
+  .reveal-modal .iframe-wrapper {
+    width: 100%;
+    height: 500px;
+  }
+  
+  @media only screen and (min-width: 60.063em) {
+    .reveal-modal .iframe-wrapper {
+      height: 600px;
+    }
+  }

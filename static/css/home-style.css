@@ -1,0 +1,738 @@
+.hide-overflow{
+  overflow:hidden !important;
+}
+#menu-controller {
+  top: 70px !important;
+  left: 45px !important;
+}
+#main .swiper-slide .item .work-caption {
+  transform: none;
+}
+body{
+  -webkit-animation:fadein 2s;
+ animation:fadein 1.5s;
+  margin: 0;
+}
+header #logo h1{
+  margin: 0;
+}
+.preloader-wrapper{
+  position:absolute;
+ width:100%;
+ height:100%;
+}
+.preloader-container{
+  background-image:url('../../images/preloader-bg.jpg');
+ position:absolute;
+ display:block;
+ height:100%;
+ width:100%;
+ background-size:cover;
+ padding:0;
+ margin:0;
+ background-repeat:no-repeat;
+ background-position:top center;
+ z-index:9999999;
+ left:0;
+}
+.preloader{
+  float:none;
+ top:40%;
+ left:50%;
+ -webkit-transform:translate(-50%, -50%);
+     -ms-transform:translate(-50%, -50%);
+         transform:translate(-50%, -50%);
+ font-size:200px;
+ z-index:999999999;
+ position:absolute;
+ color:#FFFFFF;
+}
+.preloader-subtitle{
+  float:none;
+ top:50% !important;
+ left:50% !important;
+ -webkit-transform:translate(-50%, -55%);
+     -ms-transform:translate(-50%, -55%);
+         transform:translate(-50%, -55%);
+ z-index:999999999;
+ position:absolute;
+ font-size:40px;
+ color:#FFFFFF;
+ font-weight: 600;
+}
+.preloader-wrapper .preloader-container .preloader-subtitle{
+  position:relative;
+ color:rgba(255,255,255,.7);
+ margin-bottom:30px;
+}
+.preloader-wrapper .preloader-subtitle:before{
+  content:attr(data-text);
+ position:absolute;
+ overflow:hidden;
+ max-width:100%;
+ white-space:nowrap;
+ color:#E50C2C;
+ -webkit-animation:loading 10s linear;
+         animation:loading 10s linear;
+         text-shadow: 0px 0px 2px #E50C2C;
+}
+.preloader-wrapper p.sub2{
+  float:none;
+ top:57% !important;
+ left:50%;
+ -webkit-transform:translate(-50%, -55%);
+     -ms-transform:translate(-50%, -55%);
+         transform:translate(-50%, -55%);
+ z-index:999999999;
+ position:absolute;
+ font-size:35px;
+ width:100%;
+ text-align:center;
+ color:#FFFFFF;
+  font-family:"Helvetica LT W01 Light";
+}
+header{
+  border-top:5px solid #e30c2f;
+}
+header{
+  background-color:#EAEAEA;
+ height:60px;
+}
+header{
+    z-index: 9999999999;
+   position:relative;
+   display:block;
+  }
+footer{
+  z-index: 9999999999;
+ position:relative;
+ display:block;
+}
+footer{
+  z-index:999999999;
+ position:relative;
+ display:block;
+}
+.site-intro h3{
+  font-size:58px;
+ font-weight:400;
+ line-height:70px;
+ margin-bottom:30px;
+ color: #FFFFFF;
+}
+.site-intro p{
+  color: #FFFFFF;
+}
+.dl-pdf p{
+  color: #FFFFFF;
+}
+.site-intro{
+  width:520px;
+}
+.site-intro p{
+  font-size:24px;
+}
+.dl-pdf p{
+  width:100%;
+ font-size:18px;
+}
+#main.swiper-container{
+  padding:40px 0 50px;
+}
+.line{
+  border-bottom:2px solid #e30c2f;
+ width:120px;
+ margin: 0 auto;
+ display: block;
+ padding: 15px;
+}
+#home .line {
+    margin: 0;
+    padding: 0;
+}
+.red-text{
+  color:#e30c2f;
+}
+#main .swiper-slide .item:hover .work-caption {
+  background: rgba(255,1,1,.44);
+}
+.action-hint{
+  background:#FFFFFF;
+ padding:20px;
+ border-radius:30px;
+ font-size:16px;
+ position: relative;;
+ bottom:0px;
+  left:43%;
+ width:275px;
+}
+#work-1{
+  background-image:url(../../images/thumbnails/overview.jpg) !important;
+}
+#work-2{
+  background-image:url(../../images/thumbnails/innovation.jpg) !important;
+}
+#work-3{
+  background-image:url(../../images/thumbnails/chairman.jpg) !important;
+}
+#work-4{
+  background-image:url(../../images/thumbnails/stats.jpg) !important;
+}
+#work-5{
+  background-image:url(../../images/thumbnails/countries.jpg) !important;
+}
+#work-6{
+  background-image:url(../../images/thumbnails/portfolio.jpg) !important;
+}
+#work-7{
+  background-image:url(../../images/thumbnails/csr.jpg) !important;
+}
+#work-8{
+  background-image:url(../../images/thumbnails/activity.jpg) !important;
+}
+#main .swiper-slide .item .work-caption{
+  max-width:100%;
+ width:100%;
+ background:rgba(0,0,0,.44);
+ padding-bottom:30px;
+}
+#main .swiper-slide .item .work-caption h3{
+  text-transform:capitalize;
+ font-size:24px;
+ font-weight:400;
+}
+#main .swiper-slide .item .work-caption p{
+  font-size:17px;
+}
+.work-caption h3 img{
+  padding-left:15px;
+}
+.action-hint img{
+  padding-left:7px;
+}
+.action-hint{
+  text-transform:none !important;
+}
+#main .swiper-wrapper{
+  left:750px;
+}
+.action-hint{
+  -webkit-transform:translateY(0);
+      -ms-transform:translateY(0);
+          transform:translateY(0);
+ opacity:1;
+ -webkit-transition:opacity 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0, 0.36, 0.32, 1);
+ transition:opacity 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0, 0.36, 0.32, 1);
+ -o-transition:transform 0.3s cubic-bezier(0, 0.36, 0.32, 1), opacity 0.2s ease-in;
+ transition:transform 0.3s cubic-bezier(0, 0.36, 0.32, 1), opacity 0.2s ease-in;
+ transition:transform 0.3s cubic-bezier(0, 0.36, 0.32, 1), opacity 0.2s ease-in, -webkit-transform 0.3s cubic-bezier(0, 0.36, 0.32, 1);
+}
+body.swiper-end .action-hint{
+  -webkit-transform:translateY(60px);
+      -ms-transform:translateY(60px);
+          transform:translateY(60px);
+ opacity:0;
+ display:none;
+}
+footer{
+  background-color:#b9bdc0 !important;
+ height:auto;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+     -ms-flex-align:center;
+         align-items:center;
+ width:100%;
+ bottom:0;
+ padding:10px 0;
+}
+#home footer{
+  position:absolute;
+  z-index: 9999999999999999;
+}
+.links{
+  list-style:none;
+ margin:0;
+}
+.links li{
+  display:inline;
+ padding:0 15px;
+}
+.links li a{
+  color:#000000;
+ font-size:11px;
+}
+footer .footer-copyright{
+  text-align:right !important;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+     -ms-flex-align:center;
+         align-items:center;
+ float:right;
+ padding:0;
+ margin:0;
+ font-size:11px;
+}
+.links li:not(:first-child){
+  border-left:1px solid #a4a5a6;
+}
+.text-medium{
+  font-size:23px;
+}
+.text-regular{
+  font-size:19px;
+}
+img.back{
+  width:30px;
+ float:right;
+ margin:30px 20px 30px 0px;
+ z-index:9 !important;
+ position:relative;
+}
+
+.big-text-title{
+  font-size: 24px;
+    line-height: 1.6em;
+}
+
+.border-wrap{
+  border:1px solid #CCCCCC;
+  min-height: 350px;
+}
+
+
+h4.text-regular{
+  margin-bottom:15px;
+}
+footer .row{
+  min-width:100%;
+ padding:0;
+ margin:0;
+ display:-webkit-box;
+ display:-ms-flexbox;
+ display:flex;
+ -webkit-box-align:center;
+     -ms-flex-align:center;
+         align-items:center;
+}
+
+
+
+.section-back{
+  position:relative;
+ background:#FFFFFF;
+ z-index:999999999;
+ display:block;
+ height:0;
+}
+#work-1:before{
+  content:' ';
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100%;
+ background-image:url(../../images/thumbnails/overview.jpg);
+ background-size:cover;
+ background-position:center center;
+}
+#work-2:before{
+  content:' ';
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100%;
+ background-image:url(../../images/thumbnails/innovation.jpg);
+ background-size:cover;
+ background-position:center center;
+}
+#work-3:before{
+  content:' ';
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100%;
+ background-image:url(../../images/thumbnails/chairman.jpg);
+ background-size:cover;
+ background-position:center center;
+}
+#work-4:before{
+  content:' ';
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100%;
+ background-image:url(../../images/thumbnails/stats.jpg);
+ background-size:cover;
+ background-position:center center;
+}
+#work-5:before{
+  content:' ';
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100%;
+ background-image:url(../../images/thumbnails/countries.jpg);
+ background-size:cover;
+ background-position:center center;
+}
+#work-6:before{
+  content:' ';
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100%;
+ background-image:url(../../images/thumbnails/portfolio.jpg);
+ background-size:cover;
+ background-position:center center;
+}
+#work-7:before{
+  content:' ';
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100%;
+ background-image:url(../../images/thumbnails/csr.jpg);
+ background-size:cover;
+ background-position:center center;
+}
+#work-8:before{
+  content:' ';
+ position:absolute;
+ top:0px;
+ left:0px;
+ width:100%;
+ height:100%;
+ background-image:url(../../images/thumbnails/activity.jpg);
+ background-size:cover;
+ background-position:center center;
+}
+#work-1:hover:before,#work-2:hover:before,#work-3:hover:before,#work-4:hover:before,#work-5:hover:before,#work-6:hover:before,#work-7:hover:before,#work-8:hover:before{
+  -webkit-transform:scale(1.1);
+ -ms-transform:scale(1.1);
+ transform:scale(1.1);
+ -webkit-transition:all 2s ease-in-out;
+ -o-transition:all 2s ease-in-out;
+ transition:all 2s ease-in-out;
+}
+.banner-zoom{
+  -webkit-transform:scale(1.1) !important;
+ -ms-transform:scale(1.1) !important;
+ transform:scale(1.1) !important;
+ -webkit-transition:all 2s ease-in-out !important;
+ -o-transition:all 2s ease-in-out !important;
+ transition:all 2s ease-in-out !important;
+}
+span#menu-caption-close {
+  color: #000000 !important;
+}
+#menu-wrapper.open-menu #menu-controller #menu-icon-close span {
+  background: #000;
+}
+nav#main-menu ul li a::after{
+  background: #e30c2f !important;
+}
+nav#main-menu ul li a {
+  font-size: 22px;
+}
+nav#main-menu ul li ul li a {
+  font-size: 22px;
+}
+nav#main-menu {
+  top: 100px;
+  left: 650px;
+}
+
+nav#main-menu ul li a:hover, nav#main-menu ul li a.active {
+  color: #e30c2f !important;
+}
+#overview span#menu-caption-open, #business-portfolio span#menu-caption-open, #cdoa span#menu-caption-open, #power-systems span#menu-caption-open, #csr-activities span#menu-caption-open, #group-identity span#menu-caption-open, #hsi span#menu-caption-open, #mfc span#menu-caption-open, #automotive-systems span#menu-caption-open, #construction-machinery span#menu-caption-open, #esae span#menu-caption-open, #hfmac span#menu-caption-open, #its span#menu-caption-open, #slaes span#menu-caption-open, #siais span#menu-caption-open, #myanmar-lab span#menu-caption-open, #hudp span#menu-caption-open, #hyli span#menu-caption-open, #orchard span#menu-caption-open, 
+#oia span#menu-caption-open,
+#home span#menu-caption-open {
+  color: #FFF;
+}
+#overview #menu-controller #menu-icon-stack span, #overview #menu-controller #menu-icon-close span, #business-portfolio #menu-controller #menu-icon-stack span, #business-portfolio #menu-controller #menu-icon-close span, #cdoa #menu-controller #menu-icon-stack span, #cdoa #menu-controller #menu-icon-close span, #power-systems #menu-controller #menu-icon-stack span, #power-systems #menu-controller #menu-icon-close span, #csr-activities #menu-controller #menu-icon-stack span, #csr-activities #menu-controller #menu-icon-close span, #group-identity #menu-controller #menu-icon-stack span, #group-identity #menu-controller #menu-icon-close span, #hsi #menu-controller #menu-icon-stack span, #hsi #menu-controller #menu-icon-close span, #mfc #menu-controller #menu-icon-stack span, #mfc #menu-controller #menu-icon-close span, #automotive-systems #menu-controller #menu-icon-stack span, #automotive-systems #menu-controller #menu-icon-close span, #construction-machinery #menu-controller #menu-icon-stack span, #construction-machinery #menu-controller #menu-icon-close span, #esae #menu-controller #menu-icon-stack span, #esae #menu-controller #menu-icon-close span, #hfmac #menu-controller #menu-icon-stack span, #hfmac #menu-controller #menu-icon-close span, #its #menu-controller #menu-icon-stack span, #its #menu-controller #menu-icon-close span, #slaes #menu-controller #menu-icon-stack span, #slaes #menu-controller #menu-icon-close span, #siais #menu-controller #menu-icon-stack span, #siais #menu-controller #menu-icon-close span, #myanmar-lab #menu-controller #menu-icon-stack span, #myanmar-lab #menu-controller #menu-icon-close span, #hudp #menu-controller #menu-icon-stack span, #mfc #menu-controller #menu-icon-close span, #hyli #menu-controller #menu-icon-stack span, #mfc #menu-controller #menu-icon-close span, #orchard #menu-controller #menu-icon-stack span, #mfc #menu-controller #menu-icon-close span, #oia #menu-controller #menu-icon-stack span, #oia #menu-controller #menu-icon-close span,
+#home #menu-controller #menu-icon-stack span, #home #menu-controller #menu-icon-close span {
+  display: block;
+  height: 2px;
+  width: 26px;
+  background: #FFF;
+  margin-bottom: 4px;
+}
+#overview #menu-controller, #business-portfolio #menu-controller, #cdoa #menu-controller, #power-systems #menu-controller, #csr-activities #menu-controller, #group-identity #menu-controller, #hsi #menu-controller, #mfc #menu-controller, #automotive-systems #menu-controller, #construction-machinery #menu-controller, #esae #menu-controller, #hfmac #menu-controller, #its #menu-controller, #slaes #menu-controller, #siais #menu-controller, #myanmar-lab #menu-controller, #hudp #menu-controller, #hyli #menu-controller, #orchard #menu-controller, #oia #menu-controller {
+  top: 10px;
+  left: 40px;
+}
+#overview #menu-wrapper #bg-secondary, #business-portfolio #menu-wrapper #bg-secondary, #cdoa #menu-wrapper #bg-secondary, #power-systems #menu-wrapper #bg-secondary, #csr-activities #menu-wrapper #bg-secondary, #group-identity #menu-wrapper #bg-secondary, #hsi #menu-wrapper #bg-secondary, #mfc #menu-wrapper #bg-secondary, #automotive-systems #menu-wrapper #bg-secondary, #construction-machinery #menu-wrapper #bg-secondary, #esae #menu-wrapper #bg-secondary, #hfmac #menu-wrapper #bg-secondary, #its #menu-wrapper #bg-secondary, #slaes #menu-wrapper #bg-secondary, #siais #menu-wrapper #bg-secondary, #myanmar-lab #menu-wrapper #bg-secondary, #hudp #menu-wrapper #bg-secondary, #hyli #menu-wrapper #bg-secondary, #orchard #menu-wrapper #bg-secondary, #oia #menu-wrapper #bg-secondary {
+  position: fixed;
+}
+#menu-wrapper #bg-primary {
+  position: fixed;
+  left: 0;
+}
+#overview #contact-info, #business-portfolio #contact-info, #cdoa #contact-info, #power-systems #contact-info, #csr-activities #contact-info, #group-identity #contact-info, #hsi #contact-info, #mfc #contact-info, #automotive-systems #contact-info, #construction-machinery #contact-info, #esae #contact-info, #hfmac #contact-info, #its #contact-info, #slaes #contact-info, #siais #contact-info, #myanmar-lab #contact-info, #hudp #contact-info, #hyli #contact-info, #orchard #contact-info {
+  position: fixed;
+}
+.home-demo {
+  padding-bottom: 0 !important;
+}
+.load-screen__second-part::before .load-screen{
+  overflow: hidden;
+}
+.load-screen__first-part::before .load-screen{
+  overflow: hidden;
+}
+#home nav#main-menu {
+  top: 100px;
+}
+#menu-wrapper.open-menu nav#main-menu {
+  opacity: 1;
+  width: 100% !important;
+}
+#socials {
+  position: fixed !important;
+}
+#socials ul li a:hover {
+  color: #e30c2f;
+}
+.site-intro[data-useragent*='MSIE 11.0'] h3 {
+  color: blue;
+}
+.hide{
+  display: none;
+}
+#contact-info{
+  left: 35px;
+}
+.menu-image {
+  position: absolute;
+  left: 0px;
+  top: 135px;
+  z-index: 9999999;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-transition-delay: 0.5s;
+       -o-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  display: block;
+}
+#menu-wrapper.open-menu .menu-image{
+  opacity: 1;
+}
+
+.menu-image .columns{
+  width: 600px;
+}
+.menu-image img, .menu-image .image-title{
+  margin-left: 18px;
+}
+#overview .menu-image, #hsi .menu-image, #business-portfolio .menu-image, #cdoa .menu-image, #csr-activities .menu-image, #group-identify .menu-image, #mfc .menu-image, #oia .menu-image, #automotive-systems .menu-image, #construction-machinery .menu-image, #esae .menu-image, #hfmac .menu-image, #its .menu-image, #power-systems .menu-image, #slaes .menu-image, #siais .menu-image {
+  top: 75px;
+}
+#contact_div_1,
+#contact_div_2,
+#contact_div_3,
+#contact_div_4,
+#contact_div_5,
+#contact_div_6,
+#contact_div_7,
+#contact_div_8{
+  -webkit-animation:fadein 1s;
+ animation:fadein 1s;
+}
+.large-3.medium-3.columns.border-wrap{
+  padding-top: 30px;
+}
+.preloader-title{
+  float: none;
+    top: 39% !important;
+    left: 50% !important;
+    -webkit-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
+    z-index: 999999999;
+    position: absolute;
+    font-size: 100px;
+    color: #FFFFFF;
+    font-weight: 600;
+}
+#menu-wrapper #bg-primary{
+  background-image: url(../../images/menu-image.jpg) !important;
+  background-position: 0px 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #FFFFFF;
+}
+.menu-image{
+  width: 50%;
+}
+.scroll-to-left{
+position: absolute;
+top: 45%;
+left: 0;
+background: rgba(0,0,0,.6);
+padding: 30px;
+z-index: 2;
+color: #FFFFFF;
+}
+.scroll-to-right{
+  position: absolute;
+  top: 45%;
+  right: 0;
+  background: rgba(0,0,0,.6);
+  padding: 30px;
+  z-index: 2;
+  color: #FFFFFF;
+  }
+#home-overlay{
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: .5s ease;
+    -o-transition: .5s ease;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,.6);
+    margin: 0 auto;
+}
+
+
+
+#preloader footer{
+  position: absolute !important;
+}
+.explore{
+  position: relative;
+  z-index: 9999999;
+  top: 65%;
+  text-align: center;
+}
+#home-btn{
+  background-color: #e30c2f;
+  color: #FFFFFF !important;
+  /* position: absolute; */
+  /* z-index: 9999999; */
+  padding: 5px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 auto;
+  /* display: block; */
+}
+button.right-btn {
+  background: rgba(0, 0, 0, .5);
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 9999999999;
+  top: 50%;
+  right: 0;
+  border-top-left-radius: 70px;
+  border-bottom-left-radius: 70px;
+  padding: 30px 15px 30px 30px;
+  outline: none;
+}
+button.left-btn {
+  background: rgba(0, 0, 0, .5);
+  color: #FFFFFF;
+  position: absolute;
+  z-index: 9999999999;
+  top: 50%;
+  left: 0;
+  border-top-right-radius: 70px;
+  border-bottom-right-radius: 70px;
+  padding: 30px 30px 30px 15px;
+  outline: none;
+}
+button.right-btn:hover,
+button.left-btn:hover{
+  cursor: pointer;
+  background: rgba(227, 12, 47, .5);
+}
+.hide-swipe{
+  display: none;
+}
+.z1{
+  z-index: 1 !important;
+}
+.opac-1{
+    opacity: 1 !important;
+    transform: translate3d(0px, 0px, 0px) !important;
+    transition-duration: 0ms !important;
+}
+.site-intro{
+  z-index: 1 !important;
+}
+a.canvasjs-chart-credit {
+  display: none !important;
+}
+
+.actions a{
+  margin-right: 20px;
+}
+p{
+  font-family: Helvetica LT W01 Roman !important;
+  font-size: 18px;
+}
+
+@media (min-width: 1601px) and (max-width:1920px) {
+.swiper-container{
+    height:90%;
+  }
+  #myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.action-hint-for-touch{
+    -webkit-box-shadow:none;
+            box-shadow:none;
+   font-size:13px !important;
+   padding:15px 15px !important;
+  }
+}
+
+@media (min-width: 1281px) and (max-width:1366px) {
+  #myVideo{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+}
+.swiper-container{
+  height:100%;
+}
+#main.swiper-container {
+  padding: 40px 0 130px;
+}
+.action-hint-for-touch{
+  -webkit-box-shadow:none;
+          box-shadow:none;
+ font-size:13px !important;
+ padding:15px 15px !important;
+}
+}
+.swipe-btn{
+  display:none;
+}
+#myVideo{
+  min-height: 100%;
+}
