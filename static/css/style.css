@@ -1,5 +1,6 @@
 body{
   overflow-x:hidden;
+  min-height:500px;
 }
 .hide-overflow{
   overflow-x:hidden !important;
@@ -2182,4 +2183,18 @@ body#home {
 .reveal-modal .close-reveal-modal em {
   font-style: normal;
   font-size:9px;display:block;text-align:center;
+}
+
+.accordion-title::before {
+  display:none !important;
+}
+.accordion-item h5 {
+  position:relative;
+}
+.accordion-item h5:before{
+  content:"+";
+  position:absolute;
+  right:0;
+  width:20px;height:20px;
+  top:50%;
 }

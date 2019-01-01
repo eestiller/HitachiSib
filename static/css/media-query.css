@@ -749,6 +749,14 @@ a.canvasjs-chart-credit {
   ##Screen = B/w 481px to 767px
 */
 
+@media (min-width: 768px) and (max-width: 920px) {
+  .preloader-title {
+    font-size:70px !important;
+    top:35% !important;
+  }
+
+}
+
 @media (min-width: 481px) and (max-width: 767px) {
   
   h1.preloader {
@@ -775,16 +783,17 @@ header #logo h1{
 }
 .preloader-wrapper .preloader-subtitle{
   display:block !important;
-  top: 40% !important;
+  top: 45% !important;
 }
 .preloader-wrapper .preloader-subtitle:before{
   display: none;
 }
 h1.preloader-title {
-  top: 28% !important;
+  top: 32% !important;
+  font-size:50px;
 }
 .preloader-wrapper p.sub2 {
-  top: 47% !important;
+  top: 54% !important;
   font-size: 16px;
   width: 100%;
 }
