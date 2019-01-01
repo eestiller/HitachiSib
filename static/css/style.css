@@ -187,8 +187,9 @@ footer{
  font-size:18px;
 }
 #main.swiper-container{
-  padding:0px 0 90px;
+  padding:0px 0 0px;
   position:relative;
+  max-height:75%;
 }
 .line{
   border-bottom:2px solid #e30c2f;
@@ -2047,6 +2048,7 @@ body#home {
   }
   .menu-container {
     position:absolute !important;
+    
   }
   .post-header {
     top:-100px;
@@ -2054,6 +2056,10 @@ body#home {
 
   #business-portfolio .border-wrap {
     padding:20px 20px;
+  }
+
+  .hide-overflow .menu-container {
+    background-color:#000;
   }
 
 }
@@ -2185,16 +2191,18 @@ body#home {
   font-size:9px;display:block;text-align:center;
 }
 
+
 .accordion-title::before {
   display:none !important;
 }
 .accordion-item h5 {
   position:relative;
+  padding-right:10px;
+  margin-top:0;
 }
 .accordion-item h5:before{
   content:"+";
   position:absolute;
   right:0;
-  width:20px;height:20px;
-  top:50%;
+  top: calc(50% - 5px);
 }
