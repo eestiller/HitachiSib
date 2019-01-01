@@ -416,7 +416,7 @@
   p#copyright {
     padding-top: 50px; }
   nav#main-menu {
-    padding-top: 100px; }
+  }
   #about.swiper-container, #services.swiper-container, #posts.swiper-container, #contact.swiper-container {
     padding-top: 10px;
     padding-bottom: 0; }
