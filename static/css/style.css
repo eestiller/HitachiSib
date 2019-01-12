@@ -1,6 +1,6 @@
 body{
   overflow-x:hidden;
-  min-height:500px;
+  min-height:600px;
 }
 .hide-overflow{
   overflow-x:hidden !important;
@@ -16,6 +16,7 @@ body{
  animation:fadein 1.5s;
   margin: 0;
 }
+body#prelaoder{min-height:600px;}
 header #logo h1{
   margin: 0;
   font-size: 3rem;
@@ -1092,7 +1093,7 @@ div.card div.card-title h2{
 .section-back{
   position:relative;
  background:#FFFFFF;
- z-index:999999999;
+ z-index:1003;
  display:block;
  height:0;
 }
