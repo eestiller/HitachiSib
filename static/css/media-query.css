@@ -125,6 +125,14 @@ a.canvasjs-chart-credit {
   ##Device = Desktops
   ##Screen = 1281px to 1366px
 */
+@media (min-width: 1281px) and (max-width:1500px) {
+  .preloader-wrapper p.sub2 {
+    font-size: 25px;
+  }
+  p.preloader-subtitle {
+    font-size:26px;
+  }
+}
 
 @media (min-width: 1281px) and (max-width:1366px) {
   
@@ -151,9 +159,7 @@ a.canvasjs-chart-credit {
   p.preloader-subtitle {
     font-size: 25px;
 }
-.preloader-wrapper p.sub2 {
-  font-size: 20px;
-}
+
 #main .swiper-slide .item .work-caption p {
   font-size: 15px !important;
   padding-right: 30px;
