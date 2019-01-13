@@ -2207,3 +2207,9 @@ body#home {
   right:0;
   top: calc(50% - 5px);
 }
+
+.mobile-only {display:none;}
+@media only screen and (max-width: 600px) {
+  .chart-wrapper #regions,.chart-wrapper #industry_segments{display:none}
+  .mobile-only {display:block;}
+}
