@@ -31,8 +31,7 @@
     </div>
     <header>
       <div id="logo">
-        <a href="home.html"><h1><img src="images/logo.png" alt="" /></h1
-        ></a>
+        <a href="home.html"><h1><img src="images/logo.png" alt="" /></h1></a>
       </div>
     </header>
     <div class="section-back">
@@ -210,7 +209,7 @@
                     target="_blank"
                     ><i class="fa fa-youtube"></i
                   ></a>
-                </li>
+                </li> 
               </ul>
             </div>
           </div>
@@ -223,8 +222,7 @@
         </div>
       </div>
       <div class="columns large-6">
-        <a href="home.html"
-          ><img src="images/cross-out.png" alt="" class="back"
+        <a href="#" onclick="window.history.back();return false;"><img src="images/cross-out.png" alt="" class="back"
         /></a>
       </div>
     </div>
@@ -343,20 +341,6 @@
     <!-- Initialize Swiper -->
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script>
-      jQuery(window).load(function() {
-        setTimeout(function() {
-          jQuery("img.post-header-image").addClass("banner-zoom");
-        }, 3000);
-        setTimeout(function() {
-          $(".load-screen").removeClass("front-index");
-          $(".load-screen").fadeOut();
-        }, 3000);
-
-        $("#menu-controller").click(function() {
-          $("body").toggleClass("hide-overflow");
-        });
-      });
-
       $(document).ready(function() {
         $(window).on("resize", function(e) {
           checkScreenSize();
@@ -382,6 +366,22 @@
             });
           }
         }
+      });
+
+      $(window).on('load',function() {
+        
+        setTimeout(function() {
+          jQuery("img.post-header-image").addClass("banner-zoom");
+        }, 3000);
+
+        setTimeout(function() {
+          $(".load-screen").removeClass("front-index");
+          $(".load-screen").fadeOut();
+        }, 3000);
+
+        $("#menu-controller").click(function() {
+          $("body").toggleClass("hide-overflow");
+        });
       });
     </script>
   </body>
